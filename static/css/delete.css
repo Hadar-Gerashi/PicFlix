@@ -1,0 +1,104 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-overlay.hidden {
+    display: none;
+}
+
+.modal {
+    background: #212121;
+    color: #fff;
+    padding: 30px 25px;
+    border-radius: 16px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    animation: fadeIn 0.3s ease;
+}
+
+.modal h3 {
+    font-size: 1.4em;
+    color: #c084fc;
+    margin-bottom: 10px;
+}
+
+.modal p {
+    font-size: 1em;
+    color: #ccc;
+    margin-bottom: 25px;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.modal-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    flex: 1;
+}
+
+.modal-btn.cancel {
+    background: #555;
+    color: #fff;
+}
+
+.modal-btn.cancel:hover {
+    background: #666;
+}
+
+.modal-btn.confirm {
+    background: linear-gradient(90deg, #d946ef, #6366f1);
+    color: #fff;
+}
+
+.modal-btn.confirm:hover {
+    background: linear-gradient(90deg, #ec4899, #4f46e5);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#deleteModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    display: none;
+}
+
+#deleteModal.active {
+    display: flex;
+}
