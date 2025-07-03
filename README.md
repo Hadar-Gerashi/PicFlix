@@ -127,7 +127,6 @@ DB_PORT= your_db_port
 CLOUD_VIDEO_URL= your_cloud_video_url
 CLOUD_IMAGE_URL= your_cloud_image_url
 ```
-*שימי לב: אין רווחים אחרי ה-=`*
 
 ### 5. Run the Application
 
