@@ -1,8 +1,8 @@
-# 🎬 PicFlix – Video Sharing Platform
+# PicFlix – Video Sharing Platform
 
 A full-stack video sharing platform that allows users to upload content, choose categories, and enjoy personalized content suggestions.
 
-## ✨ Features
+## Features
 
 ### User Management
 
@@ -22,7 +22,7 @@ A full-stack video sharing platform that allows users to upload content, choose 
 - **Logged-in Users**: Personalized feed based on favorite categories
 - **Guest Users**: Curated selection of popular content
 
-## 🛠️ Technologies
+## Technologies
 
 - **Language & Framework**: Python 3.10+ with Flask
 - **Security**: bcrypt for password hashing
@@ -36,7 +36,7 @@ A full-stack video sharing platform that allows users to upload content, choose 
 To improve database connection efficiency and avoid repeatedly opening and closing connections, the application uses **connection pooling** via the `dbutils.pooled_db` library.  
 This approach manages up to 10 active connections simultaneously, enhancing the application's performance and stability.
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 picflix/
@@ -77,7 +77,7 @@ picflix/
 │   └── seed_data.sql       # Sample data
 ```
 
-## 🚀 Installation & Setup
+## Installation & Setup
 
 ### Prerequisites
 
@@ -136,7 +136,7 @@ python app.py
 
 Visit [http://localhost:8080](http://localhost:8080) in your browser.
 
-## 📋 Requirements.txt Example
+## Requirements.txt Example
 
 ```
 Flask==3.1.1
@@ -151,21 +151,21 @@ pyodbc>=5.0.0
 gunicorn
 ```
 
-## 🔐 Security Features
+## Security Features
 
 - **Password Security**: All passwords are hashed using bcrypt
 - **Session Management**: Secure session handling with Flask sessions
 - **File Upload Security**: Validated file types and secure cloud storage
 - **Environment Variables**: Sensitive data stored in environment variables
 
-## 📸 File Storage
+## File Storage
 
 - **Videos**: Uploaded and stored on Cloudinary cloud storage
 - **Profile Images**: Uploaded and stored on Cloudinary cloud storage
 - **File Validation**: Only approved file formats are accepted
 - **Cloud Integration**: Automatic optimization and CDN delivery via Cloudinary
 
-## 📋 API Endpoints
+## API Endpoints
 
 | Method | Endpoint                               | Description                                 | Blueprint |
 |--------|----------------------------------------|---------------------------------------------|-----------|
@@ -194,13 +194,13 @@ gunicorn
 - Profile: `http://localhost:8080/profile/<user_id>`
 - Video Upload: `http://localhost:8080/upload_video`
 
-## 👨‍💻 Author
+## Author
 
 **Hadar** - Software Engineering Student  
 Developed as part of final studies project
 
-## 📞 Support
+## Support
 
 If you encounter any issues or have questions, please open an issue on GitHub or contact the maintainer.
 
-**Happy Streaming! 🎬**
+**Happy Streaming!**
